@@ -1,5 +1,11 @@
-let greetings: string = "Hello World";
+// let greetings: string = "Hello World";
 
-console.log(greetings);
+// console.log(greetings);
+
+let greeting: (name: string) 
+
+greeting = function (name: string) {
+  return `Hi ${name}`;
+};
 
 export {};
