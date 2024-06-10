@@ -1,9 +1,21 @@
-let arr = [4, 6, 12, 4];
-let sum = 0;
-let out = arr.reduce(function (total, ele) {
-  return total + ele;
-});
+console.log("first console");
 
-console.log(out);
+setTimeout(() => {
+  console.log("1st set timeout");
+  setTimeout(() => {
+    console.log("inside 1st set timeout");
+  }, "2000");
+  console.log("after ONE");
+}, "2000");
 
-arr.reduce(function (total, currentValue, currentIndex, arr) {}, initialValue);
+console.log("second log ");
+
+setTimeout(() => {
+  console.log("2nd set timeout");
+  setTimeout(() => {
+    console.log(" Inside 2st set timeout");
+  }, "2000");
+  console.log("after TWO");
+}, "2000");
+
+console.log("third log");
